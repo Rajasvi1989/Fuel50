@@ -38,7 +38,7 @@ resource "aws_security_group" "fuel50" {
 resource "aws_instance" "fuel50" {
   ami             = "ami-023c11a32b0207432" 
   instance_type   = "t2.micro"
-  subnet_id       = aws_subnet.fule50.id
+  subnet_id       = aws_subnet.fuel50.id
   security_group  = [aws_security_group.fuel50.id]
 
   user_data = <<-EOF
